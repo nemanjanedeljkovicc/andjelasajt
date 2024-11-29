@@ -1,0 +1,814 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(194, 224, 236);
+    position: fixed;
+  }
+  
+  #logo a {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(75, 130, 139);
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  #logo img {
+    height: 50px;
+  }
+  
+  nav {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+  }
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  nav ul li {
+    margin-left: 45px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    list-style-type: none;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(75, 130, 139);
+    font-weight: bolder;
+  }
+  nav ul li a:hover {
+    color: rgb(80, 76, 76);
+  }
+  
+  #naslovna {
+    background-image: url("../assets/img/naslovna.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+  }
+  #naslovna #naslov {
+    position: relative;
+    top: -50px;
+    opacity: 0;
+    animation: slideDown 1s ease-out forwards;
+    top: 20%;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    color: rgb(128, 196, 223);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #naslovna #naslov h1 {
+    margin: 0;
+  }
+  #naslovna #naslov p {
+    margin: 0;
+  }
+  
+  @keyframes slideDown {
+    0% {
+      top: -50px;
+      opacity: 0;
+    }
+    100% {
+      top: 20%;
+      opacity: 1;
+    }
+  }
+  .naslov h2 {
+    position: relative;
+    margin-top: 30px;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 35px;
+    color: rgb(75, 130, 139);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  #clan {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+  }
+  
+  .clanarina {
+    transition: transform 0.3s ease-in-out;
+    width: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    background-color: rgb(194, 224, 236);
+    box-shadow: 7px 11px rgb(182, 222, 238);
+    border-radius: 20px;
+  }
+  .clanarina h3 {
+    color: rgb(75, 130, 139);
+    text-align: center;
+    font-size: 25px;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+  }
+  .clanarina h4 {
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+  }
+  .clanarina p {
+    color: rgb(75, 130, 139);
+    margin-top: 25px;
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+  }
+  .clanarina ul {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .clanarina ul li {
+    margin-top: 10px;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    color: rgb(75, 130, 139);
+  }
+  .clanarina a {
+    text-decoration: none;
+  }
+  .clanarina a .dugme {
+    width: 140px;
+    background-color: white;
+    height: 40px;
+    margin-top: 27px;
+    border-radius: 20px;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .clanarina a .dugme :hover {
+    color: rgb(80, 76, 76);
+  }
+  .clanarina a .dugme h5 {
+    text-align: center;
+    color: rgb(75, 130, 139);
+    font-size: 20px;
+  }
+  
+  .clanarina:hover {
+    transform: scale(1.05);
+  }
+  
+  #slika {
+    margin-top: 50px;
+    background-image: url("../assets/img/naslovna2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+  }
+  #slika #besplatno {
+    color: rgb(128, 196, 223);
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-top: 20%;
+    font-weight: bolder;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+  }
+  #slika #besplatno p {
+    font-size: 22px;
+  }
+  #slika #besplatno a {
+    text-decoration: none;
+  }
+  #slika #besplatno a .dugme2 {
+    margin-top: 20px;
+    width: 140px;
+    background-color: rgb(128, 196, 223);
+    transition: transform 0.3s ease;
+  }
+  #slika #besplatno a .dugme2 :hover {
+    transform: scale(1.2);
+    background-color: rgb(80, 76, 76);
+  }
+  #slika #besplatno a .dugme2 h5 {
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+  }
+  
+  .naslov p {
+    color: rgb(75, 130, 139);
+    font-size: 18px;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    text-align: center;
+    padding-top: 35px;
+  }
+  
+  .koloseum-row {
+    display: flex;
+    justify-content: space-around;
+  }
+  .koloseum-row .zasto-koloseum {
+    width: 290px;
+    height: 220px;
+    background-color: rgb(194, 224, 236);
+    margin-top: 50px;
+    border-radius: 20px;
+    transition: all 400ms;
+    box-shadow: 0px 0px 10px #9a9a9a;
+  }
+  .koloseum-row .zasto-koloseum .ikonica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .koloseum-row .zasto-koloseum .ikonica i {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+  }
+  .koloseum-row .zasto-koloseum h3 {
+    margin-top: 15px;
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    color: rgb(75, 130, 139);
+  }
+  .koloseum-row .zasto-koloseum p {
+    color: rgb(75, 130, 139);
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: "Afacad Flux", sans-serif;
+  }
+  
+  .treneri {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .treneri .trener1 {
+    width: 450px;
+    height: 600px;
+    background-image: url(../assets/img/trener10.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+    opacity: 0.5;
+  }
+  .treneri .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .treneri .trener1:hover .overlay, .treneri .trener2:hover .overlay, .treneri .trener3:hover .overlay {
+    opacity: 1;
+  }
+  .treneri .trener3 {
+    width: 450px;
+    height: 600px;
+    background-image: url(../assets/img/trener11.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+    opacity: 0.5;
+  }
+  .treneri .trener2 {
+    width: 450px;
+    height: 600px;
+    background-image: url(../assets/img/trener15.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+    opacity: 0.5;
+  }
+  .treneri ul {
+    text-align: center;
+    color: white;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    margin-top: 10px;
+  }
+  .treneri ul li {
+    margin-top: 8px;
+    list-style-type: none;
+  }
+  .treneri p {
+    text-align: center;
+    color: white;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    margin-top: 10px;
+  }
+  .treneri ul {
+    text-align: center;
+    color: white;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    margin-top: 10px;
+  }
+  .treneri ul li {
+    margin-top: 8px;
+  }
+  
+  .img-hover3 ul {
+    text-align: center;
+    color: white;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    margin-top: 10px;
+  }
+  .img-hover3 ul li {
+    margin-top: 8px;
+  }
+  
+  footer {
+    padding-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .f {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(194, 224, 236);
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .f h4 {
+    color: rgb(75, 130, 139);
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  footer .f li {
+    list-style-type: none;
+  }
+  footer .f a {
+    color: rgb(75, 130, 139);
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  footer .f a .plavo {
+    color: rgb(75, 130, 139);
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: bold;
+  }
+  
+  .copyright {
+    width: 100%;
+    background-color: rgb(75, 130, 139);
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+  }
+  
+  #naslovna1 {
+    background-image: url("../assets/img/naslovna12.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+  }
+  #naslovna1 #naslov {
+    position: relative;
+    top: 17%;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    color: rgb(75, 130, 139);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #naslovna1 #naslov h1 {
+    margin: 0;
+  }
+  
+  #p {
+    padding-top: 40px;
+  }
+  #p .programi {
+    height: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    background-color: rgb(194, 224, 236);
+  }
+  #p .programi #personalni {
+    background-image: url(../assets/img/personal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #p .programi .text {
+    width: 50%;
+    height: inherit;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    color: white;
+    text-align: center;
+  }
+  #p .programi .text b {
+    color: rgb(75, 130, 139);
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+  }
+  #p .programi .text h3 {
+    color: rgb(75, 130, 139);
+    padding-top: 15px;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 27px;
+    font-style: normal;
+    margin-top: 14px;
+  }
+  #p .programi .text ul {
+    text-decoration: none;
+    margin-top: 17px;
+  }
+  #p .programi .text ul li {
+    list-style-type: none;
+    margin-top: 7px;
+  }
+  #p .programi #yoga {
+    background-image: url(../assets/img/yoga.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #p .programi #pilates {
+    background-image: url(../assets/img/pilates.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #p .programi #boks {
+    background-image: url(../assets/img/boks.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #kontakt {
+    padding-top: 10px;
+    background-color: rgb(182, 222, 238);
+    padding-bottom: 90px;
+  }
+  #kontakt h2 {
+    padding-bottom: 40px;
+  }
+  #kontakt #kontaktf {
+    width: 50%;
+    height: 500px;
+    margin: 0% auto;
+    border-radius: 30px;
+    background-color: rgb(128, 196, 223);
+  }
+  #kontakt #kontaktf #kontaktforma {
+    text-align: center;
+  }
+  #kontakt #kontaktf #kontaktforma .red {
+    display: flex;
+    justify-content: space-around;
+  }
+  #kontakt #kontaktf #kontaktforma .red input {
+    width: 250px;
+    height: 30px;
+    background-color: rgb(194, 224, 236);
+    border: 2px solid rgb(75, 130, 139);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+    margin-bottom: 10px;
+    margin-top: 10%;
+  }
+  #kontakt #kontaktf #kontaktforma .red2 {
+    display: flex;
+    justify-content: space-around;
+  }
+  #kontakt #kontaktf #kontaktforma .red2 input {
+    width: 250px;
+    height: 30px;
+    background-color: rgb(194, 224, 236);
+    border: 2px solid rgb(75, 130, 139);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #kontakt #kontaktf #kontaktforma textarea {
+    width: 400px;
+    height: 180px;
+    background-color: rgb(194, 224, 236);
+    border: 2px solid rgb(75, 130, 139);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 17px;
+    margin-top: 20px;
+  }
+  #kontakt #kontaktf #kontaktforma .red3 {
+    display: flex;
+    justify-content: space-around;
+  }
+  #kontakt #kontaktf #kontaktforma .red3 input {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(194, 224, 236);
+    border: 2px solid rgb(75, 130, 139);
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  #kontakt #kontaktf #kontaktforma .red3 :hover {
+    background-color: rgb(75, 130, 139);
+  }
+  
+  #naslovna2 {
+    background-image: url("../assets/img/naslovna13.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+  }
+  #naslovna2 #naslov {
+    position: relative;
+    top: 15%;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    color: rgb(75, 130, 139);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #naslovna2 #naslov h1 {
+    margin: 0;
+  }
+  
+  #naslovna3 {
+    background-image: url("../assets/img/naslovna14.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+  }
+  #naslovna3 #naslov {
+    position: relative;
+    top: 25%;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    color: rgb(75, 130, 139);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #naslovna3 #naslov h1 {
+    margin: 0;
+  }
+  #naslovna3 #naslov p {
+    padding-top: 15px;
+    font-size: 45px;
+  }
+  
+  .drzac {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .levo {
+    width: 37%;
+  }
+  
+  .levo img {
+    width: 500px;
+    margin-top: 100px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #c7c7c7;
+  }
+  
+  .desno h2 {
+    margin-top: 20px;
+    color: rgb(75, 130, 139);
+    font-size: 32px;
+    font-family: "Afacad Flux", sans-serif;
+    font-style: normal;
+  }
+  
+  .desno p {
+    margin-top: 5px;
+    color: rgb(128, 196, 223);
+    font-size: 28px;
+    font-family: "Afacad Flux", sans-serif;
+    font-style: normal;
+  }
+  
+  .lokacije-drzac {
+    width: 100%;
+    height: 1500px;
+    background-color: rgb(194, 224, 236);
+  }
+  
+  .lokacije {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .lokacija-slika {
+    width: 600px;
+    transform: skewX(-10deg);
+  }
+  
+  .lokacija-slika img {
+    width: 600px;
+    margin-top: 50px;
+  }
+  
+  .lokacija-tekst {
+    width: 600px;
+    height: 290px;
+    background-color: rgb(128, 196, 223);
+    margin-top: 50px;
+    transform: skewX(-10deg);
+    box-shadow: 10px 10px 5px rgb(75, 130, 139);
+  }
+  
+  .lokacija-tekst h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Afacad Flux", sans-serif;
+    font-style: normal;
+  }
+  
+  .lokacija-tekst p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Afacad Flux", sans-serif;
+    font-style: normal;
+  }
+  
+  .lokacije2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .lokacija-slika2 {
+    width: 600px;
+    transform: skewX(-10deg);
+  }
+  
+  .lokacija-slika2 img {
+    width: 600px;
+    margin-top: 50px;
+  }
+  
+  .lokacija-tekst2 {
+    width: 600px;
+    height: 290px;
+    background-color: rgb(128, 196, 223);
+    margin-top: 50px;
+    transform: skewX(-10deg);
+    box-shadow: 10px 10px 5px rgb(75, 130, 139);
+  }
+  
+  .lokacija-tekst2 h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Afacad Flux", sans-serif;
+    font-style: normal;
+  }
+  
+  .lokacija-tekst2 p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Afacad Flux", sans-serif;
+    font-style: normal;
+  }
+  
+  .lokacije3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .lokacija-slika3 {
+    width: 600px;
+    transform: skewX(-10deg);
+  }
+  
+  .lokacija-slika3 img {
+    width: 600px;
+    margin-top: 50px;
+  }
+  
+  .lokacija-tekst3 {
+    width: 600px;
+    height: 290px;
+    background-color: rgb(128, 196, 223);
+    margin-top: 50px;
+    transform: skewX(-10deg);
+    box-shadow: 10px 10px 5px rgb(75, 130, 139);
+  }
+  
+  .lokacija-tekst3 h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Afacad Flux", sans-serif;
+    font-style: normal;
+  }
+  
+  .lokacija-tekst3 p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Afacad Flux", sans-serif;
+    font-style: normal;
+  }
