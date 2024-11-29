@@ -1,0 +1,17 @@
+<rss version="2.0">
+    <channel>
+        <title>Koloseum teretana</title>
+        <link>https://nemanjanedeljkovicc.github.io/andjelasajt/index.html</link>
+        <description>Najbolja teretana u gradu!</description>
+        <item>
+           <title>Lokacije teretana</title>
+            <link>https://nemanjanedeljkovicc.github.io/andjelasajt/lokacije.html</link>
+            <description>Pogledajte sve nase lokacije u Beogradu!</description>
+        </item>
+        <item>
+           <title>Programi</title>
+            <link>https://nemanjanedeljkovicc.github.io/andjelasajt/programi.html</link>
+            <description>Pogledajte nase programe i trenere!</description>
+        </item>
+    </channel>
+</rss>
